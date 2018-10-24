@@ -13,6 +13,7 @@ public abstract class ChatChannel {
 
     private List<ChatChannelUser> members;
     private Optional<Messager.Prefix> prefix;
+    private List<ChatChannelUser> mutedMembers;
 
     public ChatChannel() {
         this(Optional.empty());
@@ -21,6 +22,7 @@ public abstract class ChatChannel {
     public ChatChannel(Optional<Messager.Prefix> prefix) {
         this.prefix = prefix;
         members = new CopyOnWriteArrayList<>();
+        mutedMembers = new CopyOnWriteArrayList<>();
     }
 
     /**
@@ -41,6 +43,10 @@ public abstract class ChatChannel {
         return members.contains(user);
     }
 
+    /**
+     * This should only be called from the ChatChannelUser class.
+     * @param user
+     */
     public void addMember(ChatChannelUser user){
         if(!isMember(user)){
             ChatChannelEvent.PlayerJoined event = new ChatChannelEvent.PlayerJoined(this, user);
@@ -53,14 +59,54 @@ public abstract class ChatChannel {
         }
     }
 
+    /**
+     * This should only be called from the ChatChannelUser class.
+     * @param user
+     */
     public void remove(ChatChannelUser user){
         if(members.contains(user)){
             members.remove(user);
+            mutedMembers.remove(user);
             sendLeaveMessage(user);
 
             ChatChannelEvent.PlayerLeft event = new ChatChannelEvent.PlayerLeft(this, user);
             ArcanaEvent.callEvent(event);
         }
+    }
+
+    /**
+     * This should only be called from the ChatChannelUser class.
+     * @param user
+     */
+    public void muteFor(ChatChannelUser user){
+        if(isMember(user)){
+            if(!isMutedFor(user)){
+
+                ChatChannelEvent.Mute event = new ChatChannelEvent.Mute(this, user);
+                ArcanaEvent.callEvent(event);
+
+                if(!event.isCancelled()) {
+                    mutedMembers.add(user);
+                }
+            }
+        }
+    }
+
+    /**
+     * This should only be called from the ChatChannelUser class.
+     * @param user
+     */
+    public void unmuteFor(ChatChannelUser user){
+        if(isMutedFor(user)){
+            mutedMembers.remove(user);
+
+            ChatChannelEvent.UnMute event = new ChatChannelEvent.UnMute(this, user);
+            ArcanaEvent.callEvent(event);
+        }
+    }
+
+    public boolean isMutedFor(ChatChannelUser user){
+        return mutedMembers.contains(user);
     }
 
     /**
@@ -76,6 +122,10 @@ public abstract class ChatChannel {
 
         if(!event.isCancelled()) {
             for (ChatChannelUser user : members) {
+                if(mutedMembers.contains(user)){
+                    continue;
+                }
+
                 if (prefix.isPresent()) {
                     Messager.sendMessage(Bukkit.getPlayer(user.getOwner()), message, prefix);
                 } else {

@@ -27,6 +27,36 @@ public class ChatChannelUser {
         subscribed = new CopyOnWriteArrayList<>();
     }
 
+    public void subscribe(ChatChannel chatChannel){
+        if(!isSubscribed(chatChannel)){
+            subscribed.add(chatChannel);
+            chatChannel.addMember(this);
+        }
+    }
+
+    public void leave(ChatChannel chatChannel){
+        if(isSubscribed(chatChannel)){
+            subscribed.remove(chatChannel);
+            chatChannel.remove(this);
+        }
+    }
+
+    public void mute(ChatChannel chatChannel){
+        if(isSubscribed(chatChannel)){
+            chatChannel.muteFor(this);
+        }
+    }
+
+    public void unmute(ChatChannel chatChannel){
+        if(isSubscribed(chatChannel)){
+            chatChannel.unmuteFor(this);
+        }
+    }
+
+    public boolean isSubscribed(ChatChannel chatChannel){
+        return subscribed.contains(chatChannel);
+    }
+
     public void setCurrent(ChatChannel current) {
         this.current = current;
     }

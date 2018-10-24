@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="426d7c3c-a21d-4a84-99f2-ce223f5e900f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ChatChannelEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/economy/EconomyEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/EconomyEvent.java" afterDir="false" />
+    <list default="true" id="426d7c3c-a21d-4a84-99f2-ce223f5e900f" name="Default Changelist" comment="Remove">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ChatChannelEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ChatChannelEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/options/ChannelOption.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/options/PermissionLocked.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaMarket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannelUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannelUser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -57,38 +46,38 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="50" />
+          <entry key="java" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="50" />
+          <entry key="JAVA" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="java" value="11523" />
-          <entry key="txt" value="226" />
+          <entry key="java" value="12310" />
+          <entry key="txt" value="233" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11523" />
-          <entry key="PLAIN_TEXT" value="237" />
+          <entry key="JAVA" value="12310" />
+          <entry key="PLAIN_TEXT" value="244" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+            <state relative-caret-position="334">
+              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#484#485#0" expanded="true" />
@@ -97,6 +86,22 @@
                 <element signature="e#1154#1155#0" expanded="true" />
                 <element signature="e#1206#1207#0" expanded="true" />
                 <element signature="e#1251#1252#0" expanded="true" />
+                <element signature="e#2670#2671#0" expanded="true" />
+                <element signature="e#2720#2721#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannelUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1411#1412#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,24 +126,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ChatChannelEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+            <state relative-caret-position="494">
+              <caret line="104" column="91" selection-start-line="104" selection-start-column="91" selection-end-line="104" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
                 <element signature="e#458#459#0" expanded="true" />
                 <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#1070#1071#0" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
+                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
                 <element signature="e#724#725#0" expanded="true" />
                 <element signature="e#760#761#0" expanded="true" />
                 <element signature="e#1321#1322#0" expanded="true" />
                 <element signature="e#1367#1368#0" expanded="true" />
-                <element signature="e#1905#1906#0" expanded="true" />
-                <element signature="e#1940#1941#0" expanded="true" />
-                <element signature="e#1156#1157#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1535#1536#0" expanded="true" />
+                <element signature="e#1583#1584#0" expanded="true" />
+                <element signature="e#1927#1928#0" expanded="true" />
+                <element signature="e#1975#1976#0" expanded="true" />
+                <element signature="e#2059#2060#0" expanded="true" />
+                <element signature="e#2114#2115#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#1954#1955#0" expanded="true" />
+                <element signature="e#2025#2026#0" expanded="true" />
+                <element signature="e#2071#2072#0" expanded="true" />
+                <element signature="e#2532#2533#0" expanded="true" />
+                <element signature="e#2580#2581#0" expanded="true" />
+                <element signature="e#2664#2665#0" expanded="true" />
+                <element signature="e#2719#2720#0" expanded="true" />
                 <element signature="e#1231#1232#0" expanded="true" />
                 <element signature="e#1269#1270#0" expanded="true" />
                 <element signature="e#1387#1388#0" expanded="true" />
@@ -553,12 +568,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/options/PermissionLocked.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/ArcanaManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/UUIDUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannelUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/options/ChannelOption.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ChatEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ArcanaEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ChatChannelEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannelUser.java" />
       </list>
     </option>
   </component>
@@ -627,27 +642,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="arcana" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArcanaCore-Paper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArcanaCore-Paper" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="arcana" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArcanaCore-Paper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArcanaCore-Paper" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="arcana" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -661,6 +655,17 @@
               <item name="utils" type="462c0819:PsiDirectoryNode" />
               <item name="chat" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ArcanaCore-Paper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArcanaCore-Paper" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="arcana" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -670,7 +675,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540420196196" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540421078011" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
@@ -808,7 +813,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1175,28 +1180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannelUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ArcanaEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1209,24 +1192,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ChatChannelEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+        <state relative-caret-position="494">
+          <caret line="104" column="91" selection-start-line="104" selection-start-column="91" selection-end-line="104" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
             <element signature="e#458#459#0" expanded="true" />
             <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
             <element signature="e#724#725#0" expanded="true" />
             <element signature="e#760#761#0" expanded="true" />
             <element signature="e#1321#1322#0" expanded="true" />
             <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1905#1906#0" expanded="true" />
-            <element signature="e#1940#1941#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#1927#1928#0" expanded="true" />
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#2025#2026#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2532#2533#0" expanded="true" />
+            <element signature="e#2580#2581#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2719#2720#0" expanded="true" />
             <element signature="e#1231#1232#0" expanded="true" />
             <element signature="e#1269#1270#0" expanded="true" />
             <element signature="e#1387#1388#0" expanded="true" />
@@ -1239,8 +1232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        <state relative-caret-position="334">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#484#485#0" expanded="true" />
@@ -1249,6 +1242,20 @@
             <element signature="e#1154#1155#0" expanded="true" />
             <element signature="e#1206#1207#0" expanded="true" />
             <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#2670#2671#0" expanded="true" />
+            <element signature="e#2720#2721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/ChatChannelUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
           </folding>
         </state>
       </provider>
