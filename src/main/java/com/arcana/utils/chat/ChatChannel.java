@@ -1,6 +1,7 @@
 package com.arcana.utils.chat;
 
-import com.arcana.utils.chat.options.ChannelOption;
+import com.arcana.events.custom.ArcanaEvent;
+import com.arcana.events.custom.ChatChannelEvent;
 import com.arcana.utils.text.Messager;
 import org.bukkit.Bukkit;
 
@@ -13,22 +14,12 @@ public abstract class ChatChannel {
     private List<ChatChannelUser> members;
     private Optional<Messager.Prefix> prefix;
 
-    /**
-     * An option is extensible and can check for certain criteria to be validated before a certain action happens.
-     */
-    private Optional<ChannelOption> option;
-
     public ChatChannel() {
         this(Optional.empty());
     }
 
     public ChatChannel(Optional<Messager.Prefix> prefix) {
-        this(prefix, Optional.empty());
-    }
-
-    public ChatChannel(Optional<Messager.Prefix> prefix, Optional<ChannelOption> option) {
         this.prefix = prefix;
-        this.option = option;
         members = new CopyOnWriteArrayList<>();
     }
 
@@ -52,26 +43,23 @@ public abstract class ChatChannel {
 
     public void addMember(ChatChannelUser user){
         if(!isMember(user)){
-            if(option.isPresent() && option.get().validateOn() == ChannelOption.ValidateOn.ON_MEMBER_JOIN){
-                if(!isOptionValid(user)){
-                    return;
-                }
+            ChatChannelEvent.PlayerJoined event = new ChatChannelEvent.PlayerJoined(this, user);
+            ArcanaEvent.callEvent(event);
+
+            if(!event.isCancelled()){
+                members.add(user);
+                sendJoinMessage(user);
             }
-            members.add(user);
-            sendJoinMessage(user);
         }
     }
 
     public void remove(ChatChannelUser user){
         if(members.contains(user)){
             members.remove(user);
-
-            if(option.isPresent() && option.get().validateOn() == ChannelOption.ValidateOn.ON_MEMBER_LEAVE){
-                if(!isOptionValid(user)){
-                    return;
-                }
-            }
             sendLeaveMessage(user);
+
+            ChatChannelEvent.PlayerLeft event = new ChatChannelEvent.PlayerLeft(this, user);
+            ArcanaEvent.callEvent(event);
         }
     }
 
@@ -82,17 +70,17 @@ public abstract class ChatChannel {
      * @param sender
      */
     public void sendMessage(String message, ChatChannelUser sender){
-        if(option.isPresent() && option.get().validateOn() == ChannelOption.ValidateOn.ON_MEMBER_MESSAGE){
-            if(!isOptionValid(sender)){
-                return;
-            }
-        }
 
-        for(ChatChannelUser user: members){
-            if(prefix.isPresent()){
-                Messager.sendMessage(Bukkit.getPlayer(user.getOwner()), message, prefix);
-            } else {
-                Messager.sendMessage(Bukkit.getPlayer(user.getOwner()), message);
+        ChatChannelEvent.SendMessage event = new ChatChannelEvent.SendMessage(this, sender, message);
+        ArcanaEvent.callEvent(event);
+
+        if(!event.isCancelled()) {
+            for (ChatChannelUser user : members) {
+                if (prefix.isPresent()) {
+                    Messager.sendMessage(Bukkit.getPlayer(user.getOwner()), message, prefix);
+                } else {
+                    Messager.sendMessage(Bukkit.getPlayer(user.getOwner()), message);
+                }
             }
         }
     }

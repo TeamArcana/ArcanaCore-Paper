@@ -1,7 +1,7 @@
 package com.arcana.utils.economy;
 
 import com.arcana.events.custom.ArcanaEvent;
-import com.arcana.events.custom.economy.EconomyEvent;
+import com.arcana.events.custom.EconomyEvent;
 
 import java.util.HashMap;
 import java.util.Map;

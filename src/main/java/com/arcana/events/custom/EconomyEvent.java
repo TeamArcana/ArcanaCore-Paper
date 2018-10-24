@@ -1,6 +1,5 @@
-package com.arcana.events.custom.economy;
+package com.arcana.events.custom;
 
-import com.arcana.events.custom.ArcanaEvent;
 import com.arcana.utils.economy.Transaction;
 
 public abstract class EconomyEvent extends ArcanaEvent {
