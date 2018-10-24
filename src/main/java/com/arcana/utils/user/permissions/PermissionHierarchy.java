@@ -60,12 +60,15 @@ public class PermissionHierarchy {
         Optional<PermissionRank> p = getPromotion(current);
 
         if(p.isPresent()){
-            owner.removeRank(current, suppressEvent);
-            owner.addRank(p.get(), suppressEvent);
-
             if(!suppressEvent){
                 PermissionEvent.RankEvent.Promote event = new PermissionEvent.RankEvent.Promote(owner, p.get(), this);
                 ArcanaEvent.callEvent(event);
+
+                if(!event.isCancelled()){
+                    swapRanks(owner, current, p.get(), suppressEvent);
+                }
+            } else {
+                swapRanks(owner, current, p.get(), suppressEvent);
             }
             return true;
         } else {
@@ -74,20 +77,28 @@ public class PermissionHierarchy {
     }
 
     public boolean demote(PermissionRank current, ArcanaPermissions owner, boolean suppressEvent){
-        Optional<PermissionRank> p = getDemotion(current);
+        Optional<PermissionRank> p = getPromotion(current);
 
         if(p.isPresent()){
-            owner.removeRank(current, suppressEvent);
-            owner.addRank(p.get(), suppressEvent);
-
             if(!suppressEvent){
                 PermissionEvent.RankEvent.Demote event = new PermissionEvent.RankEvent.Demote(owner, p.get(), this);
                 ArcanaEvent.callEvent(event);
+
+                if(!event.isCancelled()){
+                    swapRanks(owner, current, p.get(), suppressEvent);
+                }
+            } else {
+                swapRanks(owner, current, p.get(), suppressEvent);
             }
             return true;
         } else {
             return false;
         }
+    }
+
+    private void swapRanks(ArcanaPermissions owner, PermissionRank remove, PermissionRank add, boolean suppressEvent){
+        owner.removeRank(remove, suppressEvent);
+        owner.addRank(add, suppressEvent);
     }
 
     public boolean contains(PermissionRank rank){

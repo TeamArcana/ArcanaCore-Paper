@@ -3,6 +3,7 @@ package com.arcana.events.custom;
 import com.arcana.utils.user.permissions.ArcanaPermissions;
 import com.arcana.utils.user.permissions.PermissionHierarchy;
 import com.arcana.utils.user.permissions.PermissionRank;
+import org.bukkit.event.Cancellable;
 
 public abstract class PermissionEvent extends ArcanaEvent {
 
@@ -17,7 +18,9 @@ public abstract class PermissionEvent extends ArcanaEvent {
         this.permissions = permissions;
     }
 
-    public abstract static class RankEvent extends PermissionEvent{
+    public abstract static class RankEvent extends PermissionEvent implements Cancellable{
+
+        private boolean cancelled;
 
         private PermissionRank rank;
 
@@ -35,7 +38,17 @@ public abstract class PermissionEvent extends ArcanaEvent {
             return rank;
         }
 
-        public static class Add extends RankEvent {
+        @Override
+        public boolean isCancelled() {
+            return cancelled;
+        }
+
+        @Override
+        public void setCancelled(boolean cancel) {
+            this.cancelled = cancel;
+        }
+
+        public static class Add extends RankEvent implements Cancellable {
 
             public Add(ArcanaPermissions permissions, PermissionRank rank) {
                 super(permissions, rank);

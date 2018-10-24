@@ -70,21 +70,29 @@ public class ArcanaPermissions {
 
     public void addRank(PermissionRank rank, boolean suppressEvent){
         if(!hasRank(rank)){
-            ranks.add(rank);
-
             if(!suppressEvent){
                 PermissionEvent.RankEvent.Add event = new PermissionEvent.RankEvent.Add(this, rank);
                 ArcanaEvent.callEvent(event);
+
+                if(!event.isCancelled()){
+                    ranks.add(rank);
+                }
+            } else {
+                ranks.add(rank);
             }
         }
     }
 
     public void removeRank(PermissionRank rank, boolean suppressEvent){
-        ranks.remove(rank);
-
         if(!suppressEvent){
             PermissionEvent.RankEvent.Remove event = new PermissionEvent.RankEvent.Remove(this, rank);
             ArcanaEvent.callEvent(event);
+
+            if(!event.isCancelled()){
+                ranks.remove(rank);
+            }
+        } else {
+            ranks.remove(rank);
         }
     }
 }
