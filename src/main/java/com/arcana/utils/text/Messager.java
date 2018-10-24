@@ -8,18 +8,6 @@ import java.util.Optional;
 
 public class Messager {
 
-    public static String asFormattedMessage(String text, Optional<String> color, Optional<String> format){
-        if(color.isPresent()){
-            text = color.get() + text;
-        }
-
-        if(format.isPresent()){
-            text = format.get() + text;
-        }
-
-        return text;
-    }
-
     public static void broadcast(String text, Optional<Prefix> prefix){
         if(prefix.isPresent()){
             text = prefix.get().getText() + text;

@@ -7,6 +7,12 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+ * A Message is a clean and easy way to send paragraphs to players.
+ * Messages can contain multiple parent lines, and parents can be paired with children
+ *  that will be listed in a bullet point list (you can pass whatever symbol for the bullets).
+ * A Message is displayed in Messager.
+ */
 public class Message {
 
     public static MessageBuilder builder(){return new MessageBuilder();}

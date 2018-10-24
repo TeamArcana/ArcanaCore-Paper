@@ -1,9 +1,25 @@
 package com.arcana.utils;
 
+import org.bukkit.ChatColor;
+
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class StringUtils {
+
+    /**
+     * This gets a random blank string. Good use for blank scoreboard lines or Team entries.
+     * @return
+     */
+    public static String getRandomEmptyString(){
+        Random random = new Random();
+        String give = "";
+        for(int i = 0; i < 5; i++){
+            give += ChatColor.values()[random.nextInt(ChatColor.values().length)] + "";
+        }
+        return give;
+    }
 
     /**
      * Capitalizes the first letter
