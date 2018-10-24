@@ -14,7 +14,6 @@ public abstract class ScoresPreset {
     private String displayName;
     private List<ScoreEntry> scores;
     private UUID owner;
-    protected ArcanaScoreboard arcanaScoreboard;
 
     public ScoresPreset(UUID owner, String displayName) {
         this.owner = owner;
