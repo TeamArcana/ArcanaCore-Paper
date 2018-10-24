@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="426d7c3c-a21d-4a84-99f2-ce223f5e900f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/database/mongo/ArcanaMongoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/database/mongo/ArcanaMongoDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ArcanaEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/economy/EconomyEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/ArcanaKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaEconomy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaMarket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -32,36 +40,39 @@
     <session id="547367326">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="24" />
+          <entry key="java" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="1" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="java" value="4257" />
-          <entry key="txt" value="109" />
+          <entry key="java" value="8338" />
+          <entry key="txt" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4257" />
-          <entry key="PLAIN_TEXT" value="120" />
+          <entry key="JAVA" value="8338" />
+          <entry key="PLAIN_TEXT" value="160" />
         </counts>
       </usages-collector>
     </session>
@@ -69,64 +80,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/ArcanaPaper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Currency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/text/Messager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="408">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/database/mongo/ArcanaMongoDB.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaMarket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/scoreboard/ArcanaScoreboard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/scoreboard/ScoresPreset.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="115" column="56" selection-start-line="115" selection-start-column="56" selection-end-line="115" selection-end-column="56" />
+            <state relative-caret-position="86">
+              <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,6 +114,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -518,12 +494,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/text/StringFormat.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/text/StringFormats.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/StringUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/scoreboard/ScoresPreset.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/scoreboard/ArcanaScoreboard.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/text/Messager.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/database/mongo/MongoDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/database/mongo/ArcanaMongoDB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/scoreboard/ScoresPreset.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Currency.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/TransactionResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/economy/EconomyEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ArcanaEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaEconomy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaMarket.java" />
       </list>
     </option>
   </component>
@@ -541,6 +525,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -591,6 +578,39 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="arcana" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArcanaCore-Paper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArcanaCore-Paper" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="arcana" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArcanaCore-Paper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArcanaCore-Paper" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="arcana" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="economy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArcanaCore-Paper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArcanaCore-Paper" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="arcana" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -602,31 +622,16 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="arcana" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArcanaCore-Paper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArcanaCore-Paper" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="arcana" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
+              <item name="economy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540362579810" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540373504060" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
@@ -742,14 +747,21 @@
       <option name="project" value="LOCAL" />
       <updated>1540361585262</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finish ArcanaScoreboard and ScorePreset">
+      <created>1540363049229</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1540363049229</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -767,6 +779,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32925472" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32925472" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32925472" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -811,7 +824,8 @@
     <MESSAGE value="Add Location, String, Message utils" />
     <MESSAGE value="Add StringFormat, ArcanaScoreboard and ScoresPreset" />
     <MESSAGE value="Add MongoDB support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MongoDB support" />
+    <MESSAGE value="Finish ArcanaScoreboard and ScorePreset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish ArcanaScoreboard and ScorePreset" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/text/AltCodes.java">
@@ -849,6 +863,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -856,6 +873,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="128" selection-start-line="12" selection-start-column="128" selection-end-line="12" selection-end-column="128" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -901,30 +921,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/scoreboard/ArcanaScoreboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/scoreboard/ScoresPreset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="115" column="56" selection-start-line="115" selection-start-column="56" selection-end-line="115" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/text/Messager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/database/mongo/ArcanaMongoDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -938,10 +948,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/database/mongo/ArcanaMongoDB.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/scoreboard/ArcanaScoreboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="204">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/scoreboard/ScoresPreset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="698">
+          <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/ArcanaKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/com/sun/istack/internal/NotNull.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/org/omg/PortableInterceptor/SUCCESSFUL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ArcanaEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/events/custom/economy/EconomyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1191">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+            <element signature="e#1561#1562#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1624#1625#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
+            <element signature="e#1737#1738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaEconomy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Currency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaMarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
