@@ -9,17 +9,21 @@ import java.util.Optional;
 public class Messager {
 
     public static void broadcast(String text, Optional<Prefix> prefix){
-        if(prefix.isPresent()){
-            text = prefix.get().getText() + text;
-        }
-
         for(Player player: Bukkit.getOnlinePlayers()){
-            player.sendMessage(text);
+            sendMessage(player, text, prefix);
         }
     }
 
     public static void sendMessage(Player player, String s) {
-        player.sendMessage(s);
+        sendMessage(player, s, Optional.empty());
+    }
+
+    public static void sendMessage(Player player, String text, Optional<Prefix> prefix){
+        if(prefix.isPresent()){
+            text = prefix.get().getText() + text;
+        }
+
+        player.sendMessage(text);
     }
 
     public static void sendMessage(Message message){
