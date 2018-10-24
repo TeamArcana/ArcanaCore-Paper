@@ -23,7 +23,7 @@ public abstract class ArcanaMongoDB {
         openConnection();
     }
 
-    public void openConnection(){
+    public void openConnection(){   
         try {
             MongoClientURI uri = new MongoClientURI("mongodb://" + username + ":" + password + ip);
             client = new MongoClient(uri);
