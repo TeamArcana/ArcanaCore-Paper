@@ -15,7 +15,7 @@ import java.util.Optional;
  */
 public abstract class ArcanaMarket {
 
-    private Optional<String> economyName;
+    private Optional<String> marketName;
     private ArcanaEconomy economy;
     private ArcanaKey key;
 
@@ -24,14 +24,14 @@ public abstract class ArcanaMarket {
 
     }
 
-    public ArcanaMarket(ArcanaEconomy economy, ArcanaKey key, Optional<String> economyName) {
-        this.economyName = economyName;
+    public ArcanaMarket(ArcanaEconomy economy, ArcanaKey key, Optional<String> marketName) {
+        this.marketName = marketName;
         this.key = key;
         this.economy = economy;
     }
 
-    public Optional<String> getEconomyName() {
-        return economyName;
+    public Optional<String> getMarketName() {
+        return marketName;
     }
 
     public boolean is(ArcanaKey key){

@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="426d7c3c-a21d-4a84-99f2-ce223f5e900f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/ArcanaEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/events/custom/economy/EconomyEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/ArcanaKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaEconomy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaMarket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,14 +57,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="java" value="8338" />
-          <entry key="txt" value="149" />
+          <entry key="java" value="8348" />
+          <entry key="txt" value="226" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8338" />
-          <entry key="PLAIN_TEXT" value="160" />
+          <entry key="JAVA" value="8348" />
+          <entry key="PLAIN_TEXT" value="237" />
         </counts>
       </usages-collector>
     </session>
@@ -100,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaMarket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+            <state relative-caret-position="307">
+              <caret line="26" column="92" lean-forward="true" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -631,7 +623,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540373504060" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540373567966" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
@@ -754,7 +746,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540363049229</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add ArcanaEconomy, ArcanaMarket, Account, Currency, and Eco Events">
+      <created>1540373538964</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540373538964</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -825,7 +824,8 @@
     <MESSAGE value="Add StringFormat, ArcanaScoreboard and ScoresPreset" />
     <MESSAGE value="Add MongoDB support" />
     <MESSAGE value="Finish ArcanaScoreboard and ScorePreset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish ArcanaScoreboard and ScorePreset" />
+    <MESSAGE value="Add ArcanaEconomy, ArcanaMarket, Account, Currency, and Eco Events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ArcanaEconomy, ArcanaMarket, Account, Currency, and Eco Events" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/text/AltCodes.java">
@@ -1086,8 +1086,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/economy/ArcanaMarket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+        <state relative-caret-position="307">
+          <caret line="26" column="92" lean-forward="true" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
