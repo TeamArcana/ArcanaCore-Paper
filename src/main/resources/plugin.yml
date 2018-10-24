@@ -1,0 +1,5 @@
+name: ArcanaCore Paper
+version: @version@
+main: com.arcana.ArcanaPaper
+authors: [Jimmy, Jon]
+description: Core Paper libaray used for all Team Arcana Paper projects.
