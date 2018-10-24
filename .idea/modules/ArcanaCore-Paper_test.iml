@@ -20,6 +20,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ArcanaCore-Paper_main" />
     <orderEntry type="library" name="Gradle: com.destroystokyo.paper:paper-api:1.13.1-R0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver:3.8.1" level="project" />
     <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: commons-lang:commons-lang:2.6" level="project" />
@@ -33,6 +34,8 @@
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm-analysis:6.1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm-tree:6.1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm:6.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver-core:3.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:bson:3.8.1" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="ArcanaCore-Paper_main" />
