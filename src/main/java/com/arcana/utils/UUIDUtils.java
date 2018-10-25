@@ -2,6 +2,9 @@ package com.arcana.utils;
 
 import java.util.UUID;
 
+/**
+ * Utils for handling UUID's.
+ */
 public class UUIDUtils {
 
     public static String getRawUUID(UUID uuid){

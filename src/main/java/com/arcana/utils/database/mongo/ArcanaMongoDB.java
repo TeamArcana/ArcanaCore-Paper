@@ -13,7 +13,10 @@ public abstract class ArcanaMongoDB {
 
     private MongoClient client;
     private MongoDatabase database;
-    private String username, password, ip, databaseName;
+    private final String username;
+    private final String password;
+    private final String ip;
+    private final String databaseName;
 
     public ArcanaMongoDB(String username, String password, String ip, String databaseName) {
         this.username = username;

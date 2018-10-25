@@ -7,13 +7,16 @@ import com.arcana.utils.user.permissions.ArcanaPermissions;
 
 import java.util.UUID;
 
+/**
+ * This is an extensible base class for each player that contains general necessities.
+ */
 public abstract class PlayerBase {
 
-    private UUID owner;
-    private ChatChannelUser chatChannelUser;
-    private Account account;
-    private ArcanaScoreboard scoreboard;
-    private ArcanaPermissions permissions;
+    private final UUID owner;
+    private final ChatChannelUser chatChannelUser;
+    private final Account account;
+    private final ArcanaScoreboard scoreboard;
+    private final ArcanaPermissions permissions;
 
     public PlayerBase(UUID owner, ChatChannelUser chatChannelUser, Account account, ArcanaScoreboard scoreboard, ArcanaPermissions permissions) {
         this.owner = owner;

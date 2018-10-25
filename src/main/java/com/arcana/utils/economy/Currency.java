@@ -2,11 +2,16 @@ package com.arcana.utils.economy;
 
 import com.arcana.utils.ArcanaKey;
 
+/**
+ * This is a currency for the server's ArcanaEconomy instance. The economy can have as many different
+ * currencies as you'd like. Each player Account will keep track of the currencies they have and the corresponding
+ * amount.
+ */
 public abstract class Currency {
 
-    private String symbol;
-    private String name;
-    private ArcanaKey key;
+    private final String symbol;
+    private final String name;
+    private final ArcanaKey key;
 
     public Currency(String symbol, String name, ArcanaKey key) {
         this.symbol = symbol;

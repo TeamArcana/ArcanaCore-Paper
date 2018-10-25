@@ -14,7 +14,8 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * This is the manager for registering each ArcanaItemstack.
+ * This is the manager for registering each ArcanaItemstack. This will directly handle calling the action
+ * for an ArcanaItemStack that is clicked on.
  */
 public class ArcanaItemRegistry extends ArcanaManager<ArcanaItemstack> implements Listener {
 
@@ -43,7 +44,7 @@ public class ArcanaItemRegistry extends ArcanaManager<ArcanaItemstack> implement
     private boolean handleIfItemExists(ItemStack itemStack, Player player){
         for(ArcanaItemstack item: registeredItems){
             if(item.is(itemStack)){
-                item.action(player);
+                item.performAction(player);
                 return true;
             }
         }

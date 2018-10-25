@@ -7,6 +7,9 @@ import org.bukkit.entity.EntityType;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+ * This is a simple class allowing the creation of single or multiple lined holograms an ease.
+ */
 public class ArcanaHologram {
 
     public static Builder builder(){return new Builder();}

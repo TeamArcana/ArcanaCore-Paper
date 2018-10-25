@@ -9,7 +9,7 @@ import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * This is the permission container that should be given to players. PermissionHierarchy should be static instances
+ * This is the permission container that should be given to players. PermissionHierarchy should be static/final instances
  * that simply interact with an instance of this class. PermissionNodes and PermissionRanks should not be directly
  * given to players, but rather all filtered through, and applied to, an instance of ArcanaPermissions.
  */

@@ -13,7 +13,7 @@ import java.util.UUID;
  */
 public class Account {
 
-    private UUID owner;
+    private final UUID owner;
     private Map<Currency, Double> balance;
 
     public Account(UUID owner) {

@@ -7,6 +7,9 @@ import org.bukkit.util.Vector;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+ * Utils for all Location and Vector functions.
+ */
 public class LocationUtils {
 
     /**

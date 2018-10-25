@@ -8,9 +8,8 @@ import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * This is the economy conatiner for the entire server. This shouldn't handle any direct economic functions between
- * markets or players. If you want different "economies", use the ArcanaMarkets
- * for regionalized "economies"
+ * This is the economy container for the entire server. This shouldn't handle any direct economic functions between
+ * markets or players. If you want different "economies", use the ArcanaMarkets for regionalized "economies".
  */
 public class ArcanaEconomy {
 

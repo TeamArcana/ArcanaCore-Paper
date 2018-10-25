@@ -9,6 +9,10 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+ * A ChatChannelUser is the container for a player's ChatChannel functionality. All ChatChannel functions, in relation
+ * to a player, should be handled through this class.
+ */
 public class ChatChannelUser {
 
     private UUID owner;
@@ -28,19 +32,20 @@ public class ChatChannelUser {
     /**
      * This is automatic formatting for messages. This format could correlate to this Player's rank, for instance.
      */
-    private Optional<ChatMessageFormat> messaageFormatting;
+    private Optional<ChatMessageFormat> messageFormatting;
 
     public ChatChannelUser(UUID owner) {
         this(owner, Optional.empty());
     }
 
-    public ChatChannelUser(UUID owner, Optional<ChatMessageFormat> messaageFormatting) {
+    public ChatChannelUser(UUID owner, Optional<ChatMessageFormat> messageFormatting) {
         this.owner = owner;
+        this.messageFormatting = messageFormatting;
         subscribed = new CopyOnWriteArrayList<>();
     }
 
-    public Optional<ChatMessageFormat> getMessaageFormatting() {
-        return messaageFormatting;
+    public Optional<ChatMessageFormat> getMessageFormatting() {
+        return messageFormatting;
     }
 
     public void subscribe(ChatChannel chatChannel){

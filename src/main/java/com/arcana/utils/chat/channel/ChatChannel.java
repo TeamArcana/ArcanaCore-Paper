@@ -11,6 +11,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+ * A ChatChannel is what dictates what messages get sent to what players, here, its members. Players can
+ * subscribe to multiple channels at once to receive the messages from each, regardless of which channel
+ * they're currently typing in.
+ */
 public abstract class ChatChannel {
 
     private List<ChatChannelUser> members;

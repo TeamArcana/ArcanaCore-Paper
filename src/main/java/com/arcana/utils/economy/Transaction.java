@@ -4,7 +4,7 @@ import java.util.Optional;
 
 /**
  * Every economic transaction will produce a Transaction and each transaction will call an event. This Transaction
- * instance can be retrieved in the events.
+ * instance can be retrieved from the events.
  */
 public class Transaction {
 
@@ -24,6 +24,10 @@ public class Transaction {
         this.receiver = receiver;
         this.amount = amount;
         this.currency = currency;
+    }
+
+    public Currency getCurrency() {
+        return currency;
     }
 
     public Account getPayer() {

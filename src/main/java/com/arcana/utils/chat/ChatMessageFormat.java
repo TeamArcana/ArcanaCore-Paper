@@ -12,7 +12,10 @@ public class ChatMessageFormat {
 
     public static Builder builder(){return new Builder();}
 
-    private Optional<ChatColor> prefixColor, nameColor, messageColor, messageStyle;
+    private Optional<ChatColor> prefixColor;
+    private Optional<ChatColor> nameColor;
+    private Optional<ChatColor> messageColor;
+    private Optional<ChatColor> messageStyle;
 
     protected ChatMessageFormat(Optional<ChatColor> prefixColor, Optional<ChatColor> nameColor, Optional<ChatColor> messageColor, Optional<ChatColor> messageStyle) {
         this.prefixColor = prefixColor;
@@ -69,8 +72,10 @@ public class ChatMessageFormat {
 
     public static class Builder {
 
-        private Optional<ChatColor> prefixColor = Optional.empty(), nameColor = Optional.empty(),
-                messageColor = Optional.empty(), messageStye = Optional.empty();
+        private Optional<ChatColor> prefixColor = Optional.empty();
+        private Optional<ChatColor> nameColor = Optional.empty();
+        private Optional<ChatColor> messageColor = Optional.empty();
+        private Optional<ChatColor> messageStyle = Optional.empty();
 
         public Builder prefixColor(ChatColor c){
             this.prefixColor = Optional.of(c);
@@ -88,12 +93,12 @@ public class ChatMessageFormat {
         }
 
         public Builder messageStyle(ChatColor c){
-            this.prefixColor = Optional.of(c);
+            this.messageStyle = Optional.of(c);
             return this;
         }
 
         public ChatMessageFormat build(){
-            return new ChatMessageFormat(prefixColor, nameColor, messageColor, messageStye);
+            return new ChatMessageFormat(prefixColor, nameColor, messageColor, messageStyle);
         }
 
     }

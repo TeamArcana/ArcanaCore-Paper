@@ -80,6 +80,22 @@ public abstract class ScoresPreset {
         }
     }
 
+    public void removeScores() {
+        for(ScoreEntry scoreEntry: scores){
+            scoreEntry.removeScore();
+        }
+    }
+
+    /**
+     * Forces an update to all the scores. I recommend using a Listener in the ScoreEntry class
+     * rather than forcing this update as the main means to update the scoreboard.
+     */
+    public void update() {
+        for(ScoreEntry scoreEntry: scores){
+            scoreEntry.update();
+        }
+    }
+
     /**
      * ============================================
      */
@@ -109,8 +125,7 @@ public abstract class ScoresPreset {
             this.objective = objective;
         }
 
-        public void update(String text){
-            this.text = text;
+        public void update(){
             team.setPrefix(text);
             objective.getScore(entryName).setScore(score);
         }
@@ -120,7 +135,7 @@ public abstract class ScoresPreset {
 
             this.team = scoreboard.registerNewTeam(teamName);
             team.addEntry(entryName);
-            update(text);
+            update();
         }
 
         public void setText(String text) {
