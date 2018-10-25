@@ -5,6 +5,9 @@ import org.bukkit.inventory.Inventory;
 
 import java.util.Optional;
 
+/**
+ * This is the manager for each ArcanaPagedInventory instance.
+ */
 public class ArcanaPagedInvRegistry extends ArcanaManager<ArcanaPagedInventory> {
 
     @Override
