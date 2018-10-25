@@ -1,4 +1,4 @@
-package com.arcana.utils.text;
+package com.arcana.utils.chat.message;
 
 import org.bukkit.entity.Player;
 

@@ -1,7 +1,7 @@
 package com.arcana.events.custom;
 
-import com.arcana.utils.chat.ChatChannel;
-import com.arcana.utils.chat.ChatChannelUser;
+import com.arcana.utils.chat.channel.ChatChannel;
+import com.arcana.utils.chat.channel.ChatChannelUser;
 import org.bukkit.event.Cancellable;
 
 public abstract class ChatChannelEvent extends ArcanaEvent {

@@ -1,5 +1,6 @@
-package com.arcana.utils.text;
+package com.arcana.utils.chat.message;
 
+import com.arcana.utils.chat.AltCodes;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;

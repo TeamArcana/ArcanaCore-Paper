@@ -1,4 +1,4 @@
-package com.arcana.utils;
+package com.arcana.utils.manager;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;

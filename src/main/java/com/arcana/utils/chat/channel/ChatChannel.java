@@ -1,8 +1,10 @@
-package com.arcana.utils.chat;
+package com.arcana.utils.chat.channel;
 
 import com.arcana.events.custom.ArcanaEvent;
 import com.arcana.events.custom.ChatChannelEvent;
-import com.arcana.utils.text.Messager;
+import com.arcana.utils.chat.ChatMessageFormat;
+import com.arcana.utils.chat.message.Messager;
+import com.arcana.utils.user.PlayerBase;
 import org.bukkit.Bukkit;
 
 import java.util.List;
@@ -14,13 +16,15 @@ public abstract class ChatChannel {
     private List<ChatChannelUser> members;
     private Optional<Messager.Prefix> prefix;
     private List<ChatChannelUser> mutedMembers;
+    private Optional<ChatMessageFormat> channelMessageFormat;
 
     public ChatChannel() {
-        this(Optional.empty());
+        this(Optional.empty(), Optional.empty());
     }
 
-    public ChatChannel(Optional<Messager.Prefix> prefix) {
+    public ChatChannel(Optional<Messager.Prefix> prefix, Optional<ChatMessageFormat> channelMessageFormat) {
         this.prefix = prefix;
+        this.channelMessageFormat = channelMessageFormat;
         members = new CopyOnWriteArrayList<>();
         mutedMembers = new CopyOnWriteArrayList<>();
     }
@@ -32,8 +36,16 @@ public abstract class ChatChannel {
      */
     protected abstract boolean isOptionValid(ChatChannelUser user);
 
+    /**
+     * Be sure to apply the channelMessageFormat to each message sent by the channel (not by players)
+     * @param user
+     */
     protected abstract void sendJoinMessage(ChatChannelUser user);
     protected abstract void sendLeaveMessage(ChatChannelUser user);
+
+    protected Optional<ChatMessageFormat> getChannelMessageFormat(){
+        return channelMessageFormat;
+    }
 
     public Optional<Messager.Prefix> getPrefix() {
         return prefix;
@@ -44,7 +56,7 @@ public abstract class ChatChannel {
     }
 
     /**
-     * This should only be called from the ChatChannelUser class.
+     * This should only be called from the PlayerBase class.
      * @param user
      */
     public void addMember(ChatChannelUser user){
@@ -60,7 +72,7 @@ public abstract class ChatChannel {
     }
 
     /**
-     * This should only be called from the ChatChannelUser class.
+     * This should only be called from the PlayerBase class.
      * @param user
      */
     public void remove(ChatChannelUser user){
@@ -75,7 +87,7 @@ public abstract class ChatChannel {
     }
 
     /**
-     * This should only be called from the ChatChannelUser class.
+     * This should only be called from the PlayerBase class.
      * @param user
      */
     public void muteFor(ChatChannelUser user){
@@ -93,7 +105,7 @@ public abstract class ChatChannel {
     }
 
     /**
-     * This should only be called from the ChatChannelUser class.
+     * This should only be called from the PlayerBase class.
      * @param user
      */
     public void unmuteFor(ChatChannelUser user){
@@ -110,26 +122,29 @@ public abstract class ChatChannel {
     }
 
     /**
-     * This should only be called from the ChatChannelUser class. Grab the instance of that class
+     * This should only be called from the PlayerBase class. Grab the instance of that class
      * that relates to the player sending a message and have the message sent there.
      * @param message
      * @param sender
      */
-    public void sendMessage(String message, ChatChannelUser sender){
+    public void sendMessage(String message, PlayerBase sender){
 
-        ChatChannelEvent.SendMessage event = new ChatChannelEvent.SendMessage(this, sender, message);
+        ChatChannelUser user = sender.getChatChannelUser();
+
+        ChatChannelEvent.SendMessage event = new ChatChannelEvent.SendMessage(this, user, message);
         ArcanaEvent.callEvent(event);
 
         if(!event.isCancelled()) {
-            for (ChatChannelUser user : members) {
-                if(mutedMembers.contains(user)){
+
+            for (ChatChannelUser c : members) {
+                if(mutedMembers.contains(c)){
                     continue;
                 }
 
                 if (prefix.isPresent()) {
-                    Messager.sendMessage(Bukkit.getPlayer(user.getOwner()), message, prefix);
+                    Messager.sendMessage(Bukkit.getPlayer(c.getOwner()), message, prefix);
                 } else {
-                    Messager.sendMessage(Bukkit.getPlayer(user.getOwner()), message);
+                    Messager.sendMessage(Bukkit.getPlayer(c.getOwner()), message);
                 }
             }
         }

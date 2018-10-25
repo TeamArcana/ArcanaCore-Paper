@@ -1,8 +1,11 @@
-package com.arcana.utils.chat;
+package com.arcana.utils.chat.channel;
 
 import com.arcana.utils.UUIDUtils;
+import com.arcana.utils.chat.ChatMessageFormat;
+import com.arcana.utils.user.PlayerBase;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -22,9 +25,22 @@ public class ChatChannelUser {
      */
     private ChatChannel current;
 
+    /**
+     * This is automatic formatting for messages. This format could correlate to this Player's rank, for instance.
+     */
+    private Optional<ChatMessageFormat> messaageFormatting;
+
     public ChatChannelUser(UUID owner) {
+        this(owner, Optional.empty());
+    }
+
+    public ChatChannelUser(UUID owner, Optional<ChatMessageFormat> messaageFormatting) {
         this.owner = owner;
         subscribed = new CopyOnWriteArrayList<>();
+    }
+
+    public Optional<ChatMessageFormat> getMessaageFormatting() {
+        return messaageFormatting;
     }
 
     public void subscribe(ChatChannel chatChannel){
@@ -77,7 +93,7 @@ public class ChatChannelUser {
         return owner;
     }
 
-    public void sendMessage(String s){
-        current.sendMessage(s, this);
+    public void sendMessage(String s, PlayerBase sender){
+        current.sendMessage(s, sender);
     }
 }
