@@ -32,7 +32,12 @@ public class ArcanaLayout {
     public void apply(Inventory inventory){
         for(int i = 0; i < 9; i++){
             for(int j = 0; j < rows; j++){
-                inventory.setItem((i * 9) + j, layout[i][j]);
+                int index = (i * 9) + j;
+                if(layout[i][j] != null) {
+                    inventory.setItem(index, layout[i][j]);
+                } else {
+                    inventory.clear(index);
+                }
             }
         }
     }

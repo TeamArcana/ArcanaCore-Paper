@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="426d7c3c-a21d-4a84-99f2-ce223f5e900f" name="Default Changelist" comment="Allow Player to mute ChatChannels, add Mute/UnMute events">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaItemstack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaPagedInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaItemRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaPagedInvRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaHotbar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/ArcanaPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/ArcanaPaper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaItemstack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaItemstack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaItemRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaItemRegistry.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,26 +49,26 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="89" />
+          <entry key="java" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="89" />
+          <entry key="JAVA" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="27" />
-          <entry key="java" value="20399" />
+          <entry key="java" value="21023" />
           <entry key="txt" value="310" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="20399" />
+          <entry key="JAVA" value="21023" />
           <entry key="PLAIN_TEXT" value="337" />
         </counts>
       </usages-collector>
@@ -78,28 +76,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaItemstack.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaHotbar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state relative-caret-position="102">
+              <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#215#216#0" expanded="true" />
+                <element signature="e#255#256#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaPagedInventory.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaItemRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="94" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
+            <state relative-caret-position="358">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -531,14 +528,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/user/PlayerBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/channel/ChatChannel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/channel/ChatChannelUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaItemRegistry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaItemstack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaInventory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaPageInventory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/ArcanaPaper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaPagedInvRegistry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaLayout.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaPagedInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaItemstack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaItemRegistry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaLayout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaHotbar.java" />
       </list>
     </option>
   </component>
@@ -621,17 +619,6 @@
               <item name="utils" type="462c0819:PsiDirectoryNode" />
               <item name="inventory" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ArcanaCore-Paper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArcanaCore-Paper" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="arcana" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -640,7 +627,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540449514892" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540450168727" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
@@ -807,6 +794,36 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32925472" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32925472" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32925472" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.32925472" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32925472" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -846,30 +863,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add ArcanaEconomy, ArcanaMarket, Account, Currency, and Eco Events" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.destroystokyo.paper/paper-api/1.13.1-R0.1-SNAPSHOT/20b1bb32930d9938d075bb9a6548434d0658a17b/paper-api-1.13.1-R0.1-SNAPSHOT-sources.jar!/org/bukkit/ChatColor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1513">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/chat/message/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.destroystokyo.paper/paper-api/1.13.1-R0.1-SNAPSHOT/20b1bb32930d9938d075bb9a6548434d0658a17b/paper-api-1.13.1-R0.1-SNAPSHOT-sources.jar!/org/bukkit/scoreboard/Scoreboard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -1180,16 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaItemRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaInventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1271,24 +1254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaItemstack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaPagedInventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1301,6 +1266,64 @@
             <element signature="e#706#707#0" expanded="true" />
             <element signature="e#755#756#0" expanded="true" />
             <element signature="e#803#804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.destroystokyo.paper/paper-api/1.13.1-R0.1-SNAPSHOT/20b1bb32930d9938d075bb9a6548434d0658a17b/paper-api-1.13.1-R0.1-SNAPSHOT-sources.jar!/org/bukkit/entity/HumanEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.destroystokyo.paper/paper-api/1.13.1-R0.1-SNAPSHOT/20b1bb32930d9938d075bb9a6548434d0658a17b/paper-api-1.13.1-R0.1-SNAPSHOT-sources.jar!/org/bukkit/event/inventory/InventoryInteractEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaItemstack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+          <folding>
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/manager/ArcanaItemRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arcana/utils/inventory/ArcanaHotbar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
           </folding>
         </state>
       </provider>

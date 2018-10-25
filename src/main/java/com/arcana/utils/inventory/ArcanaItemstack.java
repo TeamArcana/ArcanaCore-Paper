@@ -1,8 +1,8 @@
 package com.arcana.utils.inventory;
 
 import com.arcana.ArcanaPaper;
-import com.arcana.utils.user.PlayerBase;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 /**
@@ -30,7 +30,7 @@ public abstract class ArcanaItemstack extends ItemStack{
         ArcanaPaper.INSTANCE.getItemRegistry().add(this);
     }
 
-    public abstract void action(PlayerBase player);
+    public abstract void action(Player player);
 
     public boolean is(ItemStack itemStack){
         return itemStack instanceof ArcanaItemstack && this == itemStack && this.equals(itemStack);
