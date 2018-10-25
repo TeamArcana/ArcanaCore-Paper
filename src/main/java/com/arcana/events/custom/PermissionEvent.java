@@ -5,6 +5,9 @@ import com.arcana.utils.user.permissions.PermissionHierarchy;
 import com.arcana.utils.user.permissions.PermissionRank;
 import org.bukkit.event.Cancellable;
 
+/**
+ * The custom events for the ArcanaPermissions system.
+ */
 public abstract class PermissionEvent extends ArcanaEvent {
 
     private ArcanaPermissions permissions;
@@ -18,6 +21,9 @@ public abstract class PermissionEvent extends ArcanaEvent {
         this.permissions = permissions;
     }
 
+    /**
+     * Any permission event having to do with ArcanaRanks.
+     */
     public abstract static class RankEvent extends PermissionEvent implements Cancellable{
 
         private boolean cancelled;

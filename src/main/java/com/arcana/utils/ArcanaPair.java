@@ -1,7 +1,7 @@
 package com.arcana.utils;
 
 /**
- * Simply util to pair two things together without having to use Map.Entry<>.
+ * Simply util to pair two things together without having to use Map.Entry.
  * @param <K>
  * @param <T>
  */

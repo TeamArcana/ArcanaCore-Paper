@@ -2,8 +2,14 @@ package com.arcana.events.custom;
 
 import com.arcana.utils.economy.Transaction;
 
+/**
+ * These are all the custom events used within the ArcanaEconomy system.
+ */
 public abstract class EconomyEvent extends ArcanaEvent {
 
+    /**
+     * This is the resulting Transaction that's returned from some sort of economic function.
+     */
     private Transaction transaction;
 
     public EconomyEvent(Transaction transaction) {
@@ -20,9 +26,8 @@ public abstract class EconomyEvent extends ArcanaEvent {
     }
 
     /**
-     * ==========================================
+     * These are the economic events that have to do with player Accounts.
      */
-
     public abstract static class Account extends EconomyEvent{
 
         public Account(Transaction transaction) {
@@ -68,7 +73,7 @@ public abstract class EconomyEvent extends ArcanaEvent {
     }
 
     /**
-     * ==========================================
+     * These are the economic events having to do with ArcanaMarket functions.
      */
 
     public abstract static class Market extends EconomyEvent{

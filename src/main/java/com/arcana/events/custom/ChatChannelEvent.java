@@ -4,6 +4,9 @@ import com.arcana.utils.chat.channel.ChatChannel;
 import com.arcana.utils.chat.channel.ChatChannelUser;
 import org.bukkit.event.Cancellable;
 
+/**
+ * These are the custom events for ChatChannels.
+ */
 public abstract class ChatChannelEvent extends ArcanaEvent {
 
     private ChatChannel chatChannel;

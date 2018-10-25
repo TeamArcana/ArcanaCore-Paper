@@ -14,16 +14,23 @@ public class Transaction {
     private final TransactionType type;
     private final Account payer;
     private final Optional<Account> receiver;
+    private final Optional<ArcanaMarket> market;
     private final double amount;
     private final Currency currency;
 
-    protected Transaction(TransactionResult result, TransactionType type, Account payer, Optional<Account> receiver, double amount, Currency currency) {
+    protected Transaction(TransactionResult result, TransactionType type, Account payer, Optional<Account> receiver,
+                          Optional<ArcanaMarket> market, double amount, Currency currency) {
         this.result = result;
         this.type = type;
         this.payer = payer;
         this.receiver = receiver;
+        this.market = market;
         this.amount = amount;
         this.currency = currency;
+    }
+
+    public Optional<ArcanaMarket> getMarket() {
+        return market;
     }
 
     public Currency getCurrency() {
@@ -72,8 +79,14 @@ public class Transaction {
         private TransactionType type;
         private Account payer;
         private Optional<Account> receiver = Optional.empty();
+        private Optional<ArcanaMarket> market = Optional.empty();
         private double amount;
         private Currency currency;
+
+        public TransactionBuilder market(ArcanaMarket market){
+            this.market = Optional.of(market);
+            return this;
+        }
 
         public TransactionBuilder currency(Currency currency){
             this.currency = currency;
@@ -106,7 +119,7 @@ public class Transaction {
         }
 
         public Transaction build(){
-            return new Transaction(result, type, payer, receiver, amount, currency);
+            return new Transaction(result, type, payer, receiver, market, amount, currency);
         }
     }
 }
